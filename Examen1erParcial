@@ -1,0 +1,37 @@
+public class main {
+
+	
+	    public static void main(String[] args) {
+	        // Instanciar objetos de la clase Producto
+	        Producto producto1 = new Producto(1, "Laptop", 999.99, 50);
+	        Producto producto2 = new Producto(2, "Smartphone", 599.99, 200);
+	        Producto producto3 = new Producto(3, "Tablet", 299.99, 150);
+
+	        // Mostrar información de los productos utilizando los métodos de la clase Producto
+	        System.out.println("Información del Producto 1:");
+	        producto1.mostrarNombre();
+	        producto1.mostrarPrecio();
+	        producto1.mostrarExistencias();
+
+	        System.out.println("\nInformación del Producto 2:");
+	        producto2.mostrarNombre();
+	        producto2.mostrarPrecio();
+	        producto2.mostrarExistencias();
+
+	        System.out.println("\nInformación del Producto 3:");
+	        producto3.mostrarNombre();
+	        producto3.mostrarPrecio();
+	        producto3.mostrarExistencias();
+
+	        // Utilizar métodos set para modificar los atributos de los productos
+	        producto1.setNombre("Laptop Gaming");
+	        producto1.setPrecio(1299.99);
+	        producto1.setExistencias(30);
+
+	        // Mostrar información actualizada del Producto 1
+	        System.out.println("\nInformación actualizada del Producto 1:");
+	        producto1.mostrarNombre();
+	        producto1.mostrarPrecio();
+	        producto1.mostrarExistencias();
+	    }
+	}
