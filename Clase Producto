@@ -1,0 +1,62 @@
+public class Producto {
+	
+	    // Atributos
+	    private int Producto;
+	    private String nombre;
+	    private double precio;
+	    private long existencias;
+
+	    // Constructor
+	    public Producto(int idProducto, String nombre, double precio, long existencias) {
+	        this.Producto = idProducto;
+	        this.nombre = nombre;
+	        this.precio = precio;
+	        this.existencias = existencias;
+	    }
+
+	    // Métodos para mostrar atributos
+	    public void mostrarNombre() {
+	        System.out.println("Nombre del producto: " + nombre);
+	    }
+
+	    public void mostrarPrecio() {
+	        System.out.println("Precio del producto: " + precio);
+	    }
+
+	    public void mostrarExistencias() {
+	        System.out.println("Existencias del producto: " + existencias);
+	    }
+
+	    // Métodos getters y setters
+	    public int getIdProducto() {
+	        return Producto;
+	    }
+
+	    public void setIdProducto(int Producto) {
+	        this.Producto = Producto;
+	    }
+
+	    public String getNombre() {
+	        return nombre;
+	    }
+
+	    public void setNombre(String nombre) {
+	        this.nombre = nombre;
+	    }
+
+	    public double getPrecio() {
+	        return precio;
+	    }
+
+	    public void setPrecio(double precio) {
+	        this.precio = precio;
+	    }
+
+	    public long getExistencias() {
+	        return existencias;
+	    }
+
+	    public void setExistencias(long existencias) {
+	        this.existencias = existencias;
+	    }
+	}
