@@ -1,0 +1,48 @@
+package mx.com.cuh;
+
+public class Jardinero implements Actividad {
+	
+	
+	    private boolean trabajando = false;
+
+	    @Override
+	    public void checarEntrada() {
+	        System.out.println("Jardinero: Ingreso registrado");
+	    }
+
+	    @Override
+	    public void trabajar() {
+	        setTrabajando(true);
+	        System.out.println("Jardinero: Cuidando el jardín");
+	    }
+
+	    @Override
+	    public void horaDeComida() {
+	        System.out.println("Jardinero: Hora de comer");
+	    }
+
+	    @Override
+	    public void cobrar() {
+	        System.out.println("Jardinero: Cobrar sueldo");
+	    }
+
+	    @Override
+	    public void checarSalida() {
+	        setTrabajando(false);
+	        System.out.println("Jardinero: Salida registrada");
+	    }
+
+		@Override
+		public void checarActividades() {
+			// TODO Auto-generated method stub
+			
+		}
+
+		public boolean isTrabajando() {
+			return trabajando;
+		}
+
+		public void setTrabajando(boolean trabajando) {
+			this.trabajando = trabajando;
+		}
+	}
