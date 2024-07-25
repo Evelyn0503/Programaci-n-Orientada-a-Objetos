@@ -1,0 +1,57 @@
+package mx.com.cuh;
+
+public class Trabajador implements Actividad {
+	
+	private String checarActividades = "";
+	private String trabajar = "";
+	private String horaDeComida = "";
+	private double cobrar = 0;
+	private String checarSalida = "";
+
+	public Trabajador(String checarActividades, String trabajar, String horaDeComida, double cobrar, String checarSalida) {
+		this.checarActividades = checarActividades;
+		this.trabajar = trabajar;
+		this.horaDeComida = horaDeComida;
+		this.cobrar = cobrar;
+		this.checarSalida = checarSalida;
+	}
+	   
+	
+	public String getChecarActividades() {
+		return checarActividades;
+	}
+
+
+	public void setChecarActividades(String checarActividades) {
+		this.checarActividades = checarActividades;
+	}
+
+
+	public String getTrabajar() {
+		return trabajar;
+	}
+
+
+	public void setTrabajar(String trabajar) {
+		this.trabajar = trabajar;
+	}
+
+
+	public String getHoraDeComida() {
+		return horaDeComida;
+	}
+
+
+	public void setHoraDeComida(String horaDeComida) {
+		this.horaDeComida = horaDeComida;
+	}
+
+
+	public double getCobrar() {
+		return cobrar;
+	}
+
+
+	public void setCobrar(double cobrar) {
+		this.cobrar = cobrar;
+	}
