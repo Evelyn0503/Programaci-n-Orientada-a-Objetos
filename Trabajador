@@ -1,4 +1,5 @@
-package mx.com.cuh;
+
+	package mx.com.cuh;
 
 public class Trabajador implements Actividad {
 	
@@ -55,3 +56,48 @@ public class Trabajador implements Actividad {
 	public void setCobrar(double cobrar) {
 		this.cobrar = cobrar;
 	}
+
+
+	public String getChecarSalida() {
+		return checarSalida;
+	}
+
+
+	public void setChecarSalida(String checarSalida) {
+		this.checarSalida = checarSalida;
+	}
+//
+
+	@Override
+	public void checarActividades() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void trabajar() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void horaDeComida() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void cobrar() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void checarSalida() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void checarEntrada() {
+		// TODO Auto-generated method stub
+		
+	}
+}
