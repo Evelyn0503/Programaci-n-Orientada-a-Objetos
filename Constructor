@@ -1,0 +1,49 @@
+package mx.com.cuh;
+
+public class Constructor implements Actividad {
+	
+	    private boolean trabajando = false;
+
+	    @Override
+	    public void checarEntrada() {
+	        System.out.println("Constructor: Ingreso registrado");
+	    }
+
+	    @Override
+	    public void trabajar() {
+	        setTrabajando(true);
+	        System.out.println("Constructor: Construyendo edificios");
+	    }
+
+	    @Override
+	    public void horaDeComida() {
+	        System.out.println("Constructor: Hora de comer");
+	    }
+
+	    @Override
+	    public void cobrar() {
+	        System.out.println("Constructor: Cobrar sueldo");
+	    }
+
+	    @Override
+	    public void checarSalida() {
+	        setTrabajando(false);
+	        System.out.println("Constructor: Salida registrada");
+	    }
+
+		@Override
+		public void checarActividades() {
+			// TODO Auto-generated method stub
+			
+		}
+
+		public boolean isTrabajando() {
+			return trabajando;
+		}
+
+		public void setTrabajando(boolean trabajando) {
+			this.trabajando = trabajando;
+		}
+	}
+
+
