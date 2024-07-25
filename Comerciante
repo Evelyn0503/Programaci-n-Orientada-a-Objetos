@@ -1,0 +1,46 @@
+package mx.com.cuh;
+
+public class Comerciante implements Actividad {
+
+	    private boolean trabajando = false;
+
+	    public void checarEntrada() {
+	        System.out.println("Comerciante: Ingreso registrado");
+	    }
+
+	  
+	    public void trabajar() {
+	        setTrabajando(true);
+	        System.out.println("Comerciante: Comerciando");
+	    }
+
+	    @Override
+	    public void horaDeComida() {
+	        System.out.println("Comerciante: Hora de comer");
+	    }
+
+	    @Override
+	    public void cobrar() {
+	        System.out.println("Comerciante: Cobrar sueldo");
+	    }
+
+	    @Override
+	    public void checarSalida() {
+	        setTrabajando(false);
+	        System.out.println("Comerciante: Salida registrada");
+	    }
+
+		@Override
+		public void checarActividades() {
+			
+			
+		}
+
+		public boolean isTrabajando() {
+			return trabajando;
+		}
+
+		public void setTrabajando(boolean trabajando) {
+			this.trabajando = trabajando;
+		}
+}
