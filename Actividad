@@ -1,0 +1,12 @@
+package mx.com.cuh;
+
+public interface Actividad {
+	
+	public void checarActividades();
+	public void trabajar();
+	public void horaDeComida();
+	public void cobrar();
+	public void checarSalida();
+	void checarEntrada();
+
+}
