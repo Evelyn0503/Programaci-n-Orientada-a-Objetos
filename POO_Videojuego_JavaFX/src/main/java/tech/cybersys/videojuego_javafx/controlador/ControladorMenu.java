@@ -1,25 +1,22 @@
+
+
 package tech.cybersys.videojuego_javafx.controlador;
 
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-
 import java.io.IOException;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.stage.Stage;
 
 public class ControladorMenu {
-    @FXML
-    private Label Label_Mensaje_Bienvenida;
-
-
-
-    @FXML
-    protected void onHelloButtonClick() {
-        Label_Mensaje_Bienvenida.setText("¡Inicia el Juego!");
-        Label_Mensaje_Bienvenida.setVisible(true);
+    public ControladorMenu() {
     }
 
     @FXML
-    protected void onPantallaPersonajeClick() throws IOException {
-      //Cambios agregados al código desde un ambiente remoto
+    public void BotonInicio(ActionEvent event) throws IOException {
+        ControladorVentanas.mostrarVentana(event, (Stage)null, "CrearPersonaje-view.fxml", "Creacion de Personaje");
     }
 
+    @FXML
+    protected void onPantallaPersonajeClick(ActionEvent event) throws IOException {
+    }
 }

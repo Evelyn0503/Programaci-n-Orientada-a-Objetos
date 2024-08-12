@@ -16,7 +16,7 @@
    <children>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
          <image>
-            <Image url="@../../../../../../../../../Desktop/LimeWire%20AI%20Studio%20Asset.jpeg" />
+            <Image url="@../../../../../../../../../Desktop/VIDEOJUEGO/LimeWire%20AI%20Studio%20Asset.jpeg" />
          </image>
       </ImageView>
       <Button fx:id="botonIniciar" alignment="CENTER" contentDisplay="CENTER" layoutX="618.0" layoutY="368.0" mnemonicParsing="false" onAction="#BotonInicio" text="Iniciar Juego" textAlignment="CENTER">
